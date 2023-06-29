@@ -10,8 +10,8 @@ jobs:
   test:
     env: 
       MONGODB_CLUSTER_ADDRESS: admin.a6asdll.mongodb.net
-      MONGODB_USERNAME: nirmal
-      MONGODB_PASSWORD: nirmalsuper
+      MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
+      MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}
       PORT: 3000
     environment: testing
     runs-on: ubuntu-latest
